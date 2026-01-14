@@ -22,21 +22,22 @@ Derived from the floor/ceil definitions, these describe behavior when the divide
 
 *   **Negative Dividend:**
     $$-a \bmod m = m \lceil a/m \rceil - a$$
-    *(Result is $\ge 0$)*
+    *(Result is &ge; 0)*
 
 *   **Negative Divisor:**
     $$a \bmod{-m} = a - m \lceil a/m \rceil$$
-    *(Result is $\le 0$)*
+    *(Result is &le; 0)*
 
 *   **Negative Dividend & Divisor:**
     $$-a \bmod{-m} = m \lfloor a/m \rfloor - a$$
-    *(Result is $\le 0$)*
+    *(Result is &le; 0)*
 
 ## Algebraic Properties
 
 ### Addition
-Modular addition distributes over the sum. For real numbers $a, b$:
-$$(a + b) \bmod m = ((a \bmod m) + (b \bmod m)) \bmod m$$
+Modular addition distributes over the sum.
+*   **For real numbers $a, b$:**
+    $$(a + b) \bmod m = ((a \bmod m) + (b \bmod m)) \bmod m$$
 
 ### Multiplication
 Modular multiplication distributes over the product.
